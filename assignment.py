@@ -1,4 +1,5 @@
 def format_string(name, age):
+    return(f"My name is {name} and I am {age} years old")
     """
     Create a formatted string using f-strings.
     Args:
@@ -10,6 +11,12 @@ def format_string(name, age):
     pass
 
 def conditional_check(number):
+    if number > 10:
+        return("Greater")
+    elif number < 10:
+        return("Lesser")
+    else:
+        return("Equal")
     """
     Check if a number is greater, lesser, or equal to 10.
     Args:
@@ -20,6 +27,9 @@ def conditional_check(number):
     pass
 
 def loop_sum(n):
+    for i in range(1,n+1):
+        sum=i+sum
+        return(sum)
     """
     Calculate sum of numbers from 1 to n using a loop.
     Args:
@@ -30,6 +40,10 @@ def loop_sum(n):
     pass
 
 def list_operations(numbers):
+    for i in numbers:
+        sum = sum + i
+
+    return(tuple(sum, max(numbers), min(numbers)))
     """
     Perform operations on a list of numbers.
     Args:
@@ -50,6 +64,7 @@ def dict_operations(students_dict):
     pass
 
 def set_operations(list1, list2):
+    return intersection(list1, list2)
     """
     Find common elements between two lists.
     Args:
@@ -61,6 +76,10 @@ def set_operations(list1, list2):
     pass
 
 def arithmetic_ops(a, b):
+    print("Sum:", a+b)
+    print("difference:", a-b)
+    print("product:", a*b)
+    print("quotient:", a/b)
     """
     Perform arithmetic operations.
     Args:
